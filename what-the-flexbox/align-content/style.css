@@ -27,7 +27,26 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box9 { background:#2ecc71;}
 .box10 { background:#16a085;}
 
-
+/* 
+align-content has same vals as justify-content
+only works when there are multiple lines of code   
+*/
 .container {
 	display: flex;
+	border: 10px solid goldenrod;
+	height: 100vh;
+	flex-wrap: wrap;
+	/*align-content: flex-start;*/
+	/*align-content: flex-end;*/
+	/*align-content: space-between;*/
+	/*align-content: space-around;*/
+	align-content: center;
+	/*justify-content: flex-end;*/
+	/*justify-content: flex-start;*/
+	justify-content: center;
 }
+
+.box {
+	width: 33.33333%;
+}
+
